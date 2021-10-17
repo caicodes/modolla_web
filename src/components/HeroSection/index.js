@@ -10,7 +10,7 @@ import {
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
-  ArrowRight,
+  ArrowRight
 } from "./HeroElements";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg autoPlay loop muted playsInline src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
         <HeroH1>Virtual Banking Made Easy</HeroH1>
@@ -33,6 +33,11 @@ const HeroSection = () => {
         <HeroBtnWrapper>
           <Button
             to="signup"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
