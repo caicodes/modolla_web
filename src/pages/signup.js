@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import SignIn from "../components/SignIn";
+import SignUp from "../components/SignUp";
 import { db } from "../utils/firebase";
 import {
   collection,
@@ -8,7 +8,7 @@ import {
   QuerySnapshot,
 } from "@firebase/firestore";
 
-const SignInPage = () => {
+const SignUpPage = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     const q = query(collection(db, "users"));
@@ -26,9 +26,9 @@ const SignInPage = () => {
 
   return (
     <>
-      <SignIn />
+      <SignUp />
     </>
   );
 };
 
-export default SignInPage;
+export default SignUpPage;

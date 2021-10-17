@@ -1,10 +1,12 @@
-import { firestore } from "./firebase";
-// reference the firestore instance and get the collection users
-const getUsers = async () => {
-  const snapshot = await firestore.collection("users").get();
-  // snapshot holds the collection instance from firestore
-  snapshot.docs.forEach((doc) => console.log(doc.data()));
-};
+import { db } from "./firebase";
+import { collection, getDocs } from "firebase/firestore";
 
-// share with the application
+// Get a list of users from firestore database
+async function getUsers(db) {
+  const uersCol = collection(db, "users");
+  const userSnapshot = await getDocs(uersCol);
+  const userList = userSnapshot.docs.map((doc) => doc.data());
+  return userList;
+}
+
 export { getUsers };
