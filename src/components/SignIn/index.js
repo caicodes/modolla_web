@@ -7,7 +7,6 @@ import {
   SignInFormH1,
   SignInLabel,
   SignInInput,
-  SignInCheckbox,
   SignInButton,
   ForgotPassword,
   SignInActions,

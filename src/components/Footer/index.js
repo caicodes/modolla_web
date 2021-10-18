@@ -2,14 +2,16 @@ import React from "react";
 import {
   FooterWrapper,
   FooterContainer,
-  FooterCopyright
+  FooterCopyright,
 } from "./FooterElements";
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContainer>
-        <FooterCopyright>&copy; 2021 all rights reserved</FooterCopyright>
+        <FooterCopyright>
+          &copy; 2021 all rights reserved | Environment: {process.env.NODE_ENV}
+        </FooterCopyright>
       </FooterContainer>
     </FooterWrapper>
   );

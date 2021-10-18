@@ -5,7 +5,7 @@ import {
   collection,
   query,
   onSnapshot,
-  QuerySnapshot,
+  querySnapshot,
 } from "@firebase/firestore";
 
 const SignInPage = () => {
@@ -22,12 +22,11 @@ const SignInPage = () => {
     return () => unsub();
   }, []);
 
-  console.log(users);
+  if (users) console.log(users);
 
   return (
     <>
       <SignIn />
-      {process.env.REACT_APP_STRIPE_SECRET_KEY}
     </>
   );
 };
