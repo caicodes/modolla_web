@@ -7,7 +7,8 @@ This is a basic, stripped down project started with Create React App, Smooth Scr
 - react-scroll
 - react-scroll
 - styled-components
-
+- env-cmd added
+- firebase g4 integration
 ### Todo's
 
 - [x] Add Footer
