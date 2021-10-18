@@ -16,10 +16,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "start:staging": "env-cmd -f .env.staging react-scripts start",
-    "start:prod": "env-cmd -f .env.production react-scripts start",
-    "build:staging": "env-cmd -f .env.staging react-scripts build",
-    "build:prod": "env-cmd -f .env.production react-scripts build",
+    "start:staging": "env-cmd -e staging react-scripts start",
+    "start:prod": "env-cmd -e production react-scripts start",
+    "build:staging": "env-cmd -e staging react-scripts build",
+    "build:prod": "env-cmd -e production react-scripts build"
   },
   "resolutions": {
     "styled-components": "^5"
