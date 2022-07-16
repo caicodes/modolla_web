@@ -11,14 +11,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
-<<<<<<< HEAD
     "styled-components": "^5"
-=======
-    "styled-components": "^5.3.1",
-    "typography": "^0.16.21",
-    "typography-inject-fonts": "^0.0.0",
-    "typography-theme-grand-view": "^0.16.19"
->>>>>>> 20b05f041a08f5524dcb9fbf1a1f62b0c86744b9
   },
   "scripts": {
     "start": "react-scripts start",
