@@ -11,7 +11,7 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -26,7 +26,13 @@ const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    let mounted = true;
+    if (mounted) {
+      window.addEventListener("scroll", changeNav);
+    }
+    return function cleanup() {
+      mounted = false;
+    };
   }, []);
 
   const toggleHome = () => {

@@ -7,12 +7,12 @@ import {
   SignInFormH1,
   SignInLabel,
   SignInInput,
-  SignInCheckbox,
   SignInButton,
   ForgotPassword,
   SignInActions,
   BackToHomeLink,
-  ArrowLeft
+  SignUpLink,
+  ArrowLeft,
 } from "./SignInElements";
 const SignIn = () => {
   return (
@@ -24,14 +24,14 @@ const SignIn = () => {
         </BackToHomeLink>
         <SignInForm>
           <SignInFormH1>Sign In</SignInFormH1>
-          <SignInLabel for="uname">Username</SignInLabel>
+          <SignInLabel htmlFor="uname">Username</SignInLabel>
           <SignInInput
             type="text"
             placeholder="Enter Username"
             name="uname"
             required
           />
-          <SignInLabel for="psw">Password </SignInLabel>
+          <SignInLabel htmlFor="psw">Password </SignInLabel>
           <SignInInput
             type="password"
             placeholder="Enter Password"
@@ -43,7 +43,10 @@ const SignIn = () => {
           </SignInLabel>
           <SignInActions>
             <SignInButton>Sign In</SignInButton>
-            <ForgotPassword to="/">Forgot Password?</ForgotPassword>
+            <ForgotPassword to="/forgotpass">Forgot Password?</ForgotPassword>
+          </SignInActions>
+          <SignInActions>
+            <SignUpLink to="/signup">New? Create an Account</SignUpLink>
           </SignInActions>
         </SignInForm>
       </SignInContainer>
