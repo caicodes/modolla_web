@@ -10,7 +10,7 @@ const Footer = () => {
     <FooterWrapper>
       <FooterContainer>
         <FooterCopyright>
-          &copy; 2021 all rights reserved | Environment: {process.env.NODE_ENV}
+          &copy; 2022 all rights reserved | Environment: {process.env.NODE_ENV}
         </FooterCopyright>
       </FooterContainer>
     </FooterWrapper>
