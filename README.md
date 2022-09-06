@@ -1,6 +1,7 @@
-# react-styled
+<img src="./project/modolla-landing.jpg" alt="modolla wallet web app" />
+# modolla wallet web 
 
-This is a basic, stripped down project started with Create React App, Smooth Scroll and Styled Components.
+This is a project started with Create React App, Smooth Scroll and Styled Components.
 
 - react
 - react-icons
@@ -29,16 +30,3 @@ This is a basic, stripped down project started with Create React App, Smooth Scr
 - [ ] Add legal/credits
 - [ ] Add a dismissable cookie notice
 
-## Typography.js w/CRA
-
-```js
-import Typography from "typography";
-import grandViewTheme from "typography-theme-grand-view";
-import injectFonts from "typography-inject-fonts";
-
-const typography = new Typography(grandViewTheme);
-typography.injectStyles();
-injectFonts(typography);
-```
-
-Having some issues with typography here, working in g4 gatsby...

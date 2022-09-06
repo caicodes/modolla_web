@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
   background: ${({ lightBg }) =>
     lightBg
       ? "linear-gradient(to left bottom, rgb(3 191 113), rgb(5 68 50))"
-      : "#010606"};
+      : "#000000"};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
